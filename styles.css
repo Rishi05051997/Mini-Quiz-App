@@ -1,8 +1,11 @@
 @import url('https://memorable-ui.netlify.app/styles/main.css');
 
-
 body {
     background-color: var(--primary-color);
+}
+:root {
+    --white-color:#fff;
+    --black-color:#000000;
 }
 
 p {
@@ -28,7 +31,7 @@ img {
     width: 600px;
     /* height: 500px; */
     margin: 0 auto;
-    background-color: #eee;
+    background-color: var(--white-color);
     padding: 10px 50px 50px 50px;
     border: 3px solid #fff;
     border-radius: 5px;
@@ -39,7 +42,7 @@ img {
     background-color: var(--primary-color);
     font-size: 4rem;
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
     padding: 10px 0;
     width: 100%;
     margin-bottom: 2rem;
@@ -52,11 +55,6 @@ img {
     align-items: center;
 }
 
-.quiz-header #progress {
-    color: #2b2b2b;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
 
 .quiz-header #count-down {
     font-size: 1.6rem;
@@ -64,37 +62,30 @@ img {
     background-color: var(--danger-color);
     padding: 5px;
     margin: 1px;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 5px;
 }
-
 .quiz-box #question {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--primary-color);
-    border: 1px solid #777;
+    border: 1px solid var(--black-color);
     border-width: 1px 0;
     padding: 5px 0;
 }
-
 .buttons {
     margin: 1.5rem 0 4rem 0;
 }
-
-
-
 #score {
     color: var(--black);
     text-align: center;
     font-size: 2rem;
     margin-bottom: 4rem;
 }
-
 .quiz-repeat { 
     text-align: center;
     margin: 0 auto;
 }
-
 .quiz-repeat a {
     font-size: 1.6rem;
     font-weight: 600;
